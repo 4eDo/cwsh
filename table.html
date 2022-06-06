@@ -1,0 +1,131 @@
+<table id="cwsh_codegen">
+	<tbody>
+		<tr>
+			<td>Племя:</td>
+			<td><select id="cwsh_cat_praid" required="required"><option value="thunder">Грозовое племя</option><option value="shadows">Племя Теней</option><option value="wind">Племя Ветра</option><option value="river">Речное племя</option><option value="waterfall">Клан Падающей Воды</option><option value="alonekit">Одиночки</option><option value="homekit">Домашние</option></select></td>
+			<td>Выберите племя</td>
+		</tr>
+		<tr>
+			<td>Имя кота:</td>
+			<td><input id="cwsh_cat_name" required="required" type="text"></td>
+			<td>Имя кота. Если он принадлежит Клану Падающей Воды, то только первое слово имени.</td>
+		</tr>
+		<tr id="table_cwsh_cat_allnames" hidden>
+			<td>Цепь имён:</td>
+			<td><input id="cwsh_cat_allnames" type="text"></td>
+			<td>Котёнок - оруженосец - воитель</td>
+		</tr>
+		<tr id="table_cwsh_cat_name_waterfall" hidden>
+			<td>Вторая часть имени:</td>
+			<td><input id="cwsh_cat_name_waterfall" type="text"></td>
+			<td>Оставшаяся часть имени кота из Клана Падающей Воды</td>
+		</tr>
+		<tr>
+			<td>Возраст кота:</td>
+			<td><input id="cwsh_cat_age" required="required" type="number" min="0" placeholder="Введите возраст"></td>
+			<td>В лунах</td>
+		</tr>
+		<tr>
+			<td>Должность:</td>
+			<td>
+      <input type="text" id="cwsh_cat_status" list="cwsh_cat_status_list_2">
+<datalist id="cwsh_cat_status_list">
+	<option value="одиночка">
+	<option value="домашний">
+	<option value="домашняя">
+</datalist>
+<datalist id="cwsh_cat_status_list_1">
+	<option value="предводитель">
+	<option value="предводительница">
+	<option value="глашатай">
+	<option value="целитель">
+	<option value="целительница">
+	<option value="ученик целителя">
+	<option value="старший воитель">
+	<option value="старшая воительница">
+	<option value="воитель">
+	<option value="воительница">
+	<option value="оруженосец">
+	<option value="котёнок">
+	<option value="королева">
+	<option value="старейшина">
+</datalist>
+<datalist id="cwsh_cat_status_list_2">
+	<option value="страж неба">
+	<option value="стражница неба">
+	<option value="верховная мать">
+	<option value="травник">
+	<option value="травница">
+	<option value="последователь неба">
+	<option value="последовательница неба">
+	<option value="последователь верховной">
+	<option value="последовательница верховной">
+	<option value="последователь разнотравья">
+	<option value="последовательница разнотравья">
+	<option value="ловчий">
+	<option value="ловчая">
+	<option value="страж">
+	<option value="стражница">
+	<option value="будущий">
+	<option value="будущая">
+	<option value="котёнок">
+	<option value="кормящая">
+	<option value="уходящий">
+	<option value="уходящая">
+</datalist>
+      </td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Ссылка на профиль:</td>
+			<td><input id="cwsh_cat_account" required="required" type="url"></td>
+			<td>Ссылка на свой профиль</td>
+		</tr>
+		<tr>
+			<td>Ссылка на анкету:</td>
+			<td><input id="cwsh_cat_ank" required="required" type="url"></td>
+			<td>Ссылка на свою анкету</td>
+		</tr>
+		<tr>
+			<td>Наставник:</td>
+			<td><input id="cwsh_cat_master" type="text"></td>
+			<td>Имя наставника</td>
+		</tr>
+		<tr>
+			<td>Ссылка на профиль наставника:</td>
+			<td><input id="cwsh_cat_master_acc" type="url"></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Занятый образ:</td>
+			<td><input id="cwsh_cat_image1" required="required" type="url"></td>
+			<td>Ссылка на образ</td>
+		</tr>
+		<tr>
+			<td>Занятый образ 2:</td>
+			<td><input id="cwsh_cat_image2" type="url"></td>
+			<td>Вторая ссылка (если требуется)</td>
+		</tr>
+		<tr>
+			<td>Характеристика:</td>
+			<td><input id="cwsh_cat_char" required="required" type="text" placeholder="ДОБРОТА УМ ГОРДОСТЬ"></td>
+			<td>Три слова (прим. ДОБРОТА УМ ГОРДОСТЬ)</td>
+		</tr>
+		<tr>
+			<td>Краткое описание:</td>
+			<td><textarea id="cwsh_cat_info" required="required" maxlength="200"></textarea></td>
+			<td>Краткое описание, буквально основные факты. Не более 200 символов</td>
+		</tr>
+		<tr>
+			<td>Картинка в инфобокс:</td>
+			<td><input id="cwsh_cat_img" required="required" type="url"></td>
+			<td>180х180 px</td>
+		</tr>
+		<tr>
+			<td>Прочее:</td>
+			<td><textarea id="cwsh_cat_other"></textarea></td>
+			<td>Любая другая информация о коте</td>
+		</tr>
+	</tbody>
+</table>
+<input type="submit" class="button submit" value="Отправить все коды" onclick="cwsh_generateCode()">
